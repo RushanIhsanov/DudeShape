@@ -1,0 +1,40 @@
+.header {
+    padding-top: 44px;
+    padding-bottom: 26px;
+}
+
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #244D4D;
+
+}
+
+.nav {
+    &__items {
+        display: flex;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #161616;
+
+        & {
+            li+li {
+                padding-left: 50px;
+            
+            }
+        }
+    }
+}
+
