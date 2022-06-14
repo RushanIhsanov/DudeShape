@@ -6,6 +6,8 @@
 body {
   margin: 0;
   font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 h1,
@@ -70,23 +72,104 @@ video {
 
 .header__logo {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: #244D4D;
+  color: #244d4d;
 }
 
 .nav__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #161616;
 }
 .nav__items li + li {
   padding-left: 50px;
+}
+
+.menu__search {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.menu__burger {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.header__burger {
+  display: none;
+  position: relative;
+  width: 33px;
+  height: 23px;
+  z-index: 30;
+  margin-left: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header__burger::before,
+.header__burger::after {
+  content: "";
+  display: block;
+  background-color: #244d4d;
+  position: absolute;
+  width: 32px;
+  height: 4px;
+  left: 0;
+  border-radius: 50px;
+}
+
+.header__burger::before {
+  top: 0;
+}
+
+.header__burger::after {
+  bottom: 0;
+}
+
+.header__burger-el {
+  display: block;
+  position: absolute;
+  background-color: #244d4d;
+  left: 0;
+  height: 4px;
+  width: 32px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50px;
+}
+
+.header__burger.active .header__burger-el {
+  height: 0;
+}
+
+.header__burger.active::before {
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__burger.active::after {
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .header__menu,
+.nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+  }
 }
