@@ -34,6 +34,7 @@ a:active {
 
 ul {
   list-style: none;
+  padding-left: 0px;
 }
 
 img,
@@ -289,5 +290,48 @@ video {
     -ms-flex-preferred-size: 309px;
         flex-basis: 309px;
     height: 326px;
+  }
+}
+.trust {
+  padding: 140px 0;
+}
+
+.trust__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #244d4d;
+  text-align: center;
+}
+
+.trust__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+.trust__items li + li {
+  padding-left: 28px;
+}
+
+@media (max-width: 768px) {
+  .trust {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 428px) {
+  .trust {
+    padding: 50px 0;
+  }
+
+  .trust__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }

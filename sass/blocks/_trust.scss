@@ -1,0 +1,40 @@
+.trust {
+    padding: 140px 0;
+}
+
+.trust__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #244d4d;
+
+    text-align: center;
+}
+.trust__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 40px;
+
+    li + li {
+        padding-left: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trust {
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 428px) {
+    .trust {
+        padding: 50px 0;
+    }
+
+    .trust__title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
