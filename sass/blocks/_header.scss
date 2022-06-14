@@ -102,6 +102,10 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding-top: 20px;
+    }
+
     .header__menu,
     .nav {
         display: none;
