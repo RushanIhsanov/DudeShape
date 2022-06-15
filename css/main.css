@@ -335,3 +335,151 @@ video {
     line-height: 23px;
   }
 }
+.about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__img-wrap {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__content {
+  max-width: 436px;
+  padding: 46px 0 5px 48px;
+}
+
+.about__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #244d4d;
+}
+
+.about__subtitle {
+  font-size: 20px;
+  line-height: 25px;
+  color: #444444;
+  padding: 20px 0 40px;
+}
+
+.about__advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__advantage + .about__advantage {
+  margin-top: 30px;
+}
+
+.about__advantage-descr {
+  max-width: 306px;
+  padding-left: 28px;
+}
+
+.about__advantage-img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__advantage-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #244d4d;
+}
+
+.about__advantage-subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  color: #383738;
+  padding-top: 14px;
+}
+
+@media (max-width: 768px) {
+  .about__content {
+    padding: 10px 0 5px 30px;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .about__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 0 40px;
+  }
+
+  .about__advantage-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .about__advantage-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .about__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .about__content {
+    padding-left: 24px;
+  }
+}
+@media (max-width: 428px) {
+  .about__title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .about__subtitle {
+    font-size: 12px;
+    line-height: 19px;
+    padding: 12px 0 30px;
+  }
+
+  .about__img-wrap {
+    margin-top: 30px;
+  }
+
+  .about__advantage-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .about__advantage-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .about__advantage-subtitle {
+    font-size: 10px;
+    line-height: 15px;
+    padding-top: 4px;
+    max-width: 151px;
+  }
+
+  .about__advantage + .about__advantage {
+    margin-top: 20px;
+  }
+}
